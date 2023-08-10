@@ -1,6 +1,6 @@
 # Music Player Project
 
-![Screenshot](image.png)
+![Screenshot](screenshot.png)
 Welcome to the Music Player project! This is a simple music player application built using Python and the Tkinter library for the GUI, and the Pygame library for playing audio files. The music player allows users to browse their music collection, search for songs, and play them.
 
 ## Features
