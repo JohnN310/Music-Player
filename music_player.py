@@ -10,7 +10,7 @@ class MusicPlayer(tk.Tk):
         self.title("Music Player")
         self.geometry("1280x720")
         # Load the image for the background
-        image_path = "background.png"
+        image_path = "C://Users//anhkh//OneDrive//GitHub//Music-Player//Music-Player//background.png"
         self.background_image = tk.PhotoImage(file=image_path)
 
         # Set the background image of the main window (root)
@@ -75,7 +75,7 @@ class MusicPlayer(tk.Tk):
 
     def load_songs(self):
         # Load song files from the music folder and add them to the song_list
-        music_folder = "Music Folder"
+        music_folder = "C://Users//anhkh//OneDrive//GitHub//Music-Player//Music-Player//Music Folder"
         for filename in os.listdir(music_folder):
             if filename.endswith(".mp3"):  # Change the file extension as needed
                 self.song_list.append(filename)
@@ -84,7 +84,7 @@ class MusicPlayer(tk.Tk):
 
     def play_song(self):
         # Play the current song
-        current_song = os.path.join("Music Folder", self.song_list[self.current_song_index])
+        current_song = os.path.join("C://Users//anhkh//OneDrive//GitHub//Music-Player//Music-Player//Music Folder", self.song_list[self.current_song_index])
         pygame.mixer.music.load(current_song)
         pygame.mixer.music.play()
 
@@ -93,7 +93,7 @@ class MusicPlayer(tk.Tk):
         self.current_song_index += 1
         if self.current_song_index >= len(self.song_list):
             self.current_song_index = 0
-        next_song = os.path.join("Music Folder", self.song_list[self.current_song_index])
+        next_song = os.path.join("C://Users//anhkh//OneDrive//GitHub//Music-Player//Music-Player//Music Folder", self.song_list[self.current_song_index])
         pygame.mixer.music.load(next_song)
         pygame.mixer.music.play()
 
